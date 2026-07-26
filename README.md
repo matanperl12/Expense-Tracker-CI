@@ -1,5 +1,7 @@
 # Expense Tracker
 
+> This is the **application repo** (app code, Helm charts, GitHub Actions). Infrastructure and GitOps live in the sibling repo: [**Expense-Tracker-CD**](https://github.com/matanperl12/Expense-Tracker-CD).
+
 ## The idea
 
 We wanted a project that goes through the *whole* DevOps loop, not just "containerize an
