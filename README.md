@@ -2,10 +2,10 @@
 
 ## The idea
 
-I wanted a project that goes through the *whole* DevOps loop, not just "containerize an
+We wanted a project that goes through the *whole* DevOps loop, not just "containerize an
 app and call it done": write the app, package it, define the infrastructure as code,
 deploy it through GitOps, wire up CI/CD so a `git push` ships to a real cluster, and
-have monitoring in place so I'd actually know if something broke — all on AWS, on a
+have monitoring in place so we'd actually know if something broke — all on AWS, on a
 student budget.
 
 This is an expense tracker app — a FastAPI backend backed by PostgreSQL, with a
@@ -49,7 +49,7 @@ flowchart LR
 > expand/collapse it, scroll to zoom, drag to pan. (GitHub can't run the
 > interactive version inline in this README, so download/open the file locally.)
 
-## What I used
+## What we used
 
 - **App**: Python, FastAPI, React + Vite, nginx, PostgreSQL, pytest, ruff
 - **Containers**: Docker, multi-stage builds, Docker Compose for local dev
@@ -247,7 +247,7 @@ With the cluster up:
 5. **Alerts** — crash-loop a pod (e.g. scale the backend to an image tag that doesn't
    exist) and watch Alertmanager fire `KubePodCrashLooping` to Slack.
 
-## Cost (just for my own project)
+## Cost (just for our own project)
 
 Rough hourly cost while the cluster is up (`eu-central-1`, on-demand pricing):
 
@@ -265,4 +265,4 @@ cluster running overnight unless you mean to.
 
 ---
 
-Built by David — DevOps Final Project, 2026
+Built by David Srur and Matan Perl — DevOps Final Project, 2026
